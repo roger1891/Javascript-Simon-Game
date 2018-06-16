@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Simon Game</title>
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="#" id="close-menu">
+              Close &times;
+            </a>
+          </li>
+          <li>
+            <span  class="label label-default">Game Status</span> <input id="gameStat" type="checkbox" data-toggle="toggle">
+          </li>
+          <li>
+            <span class="label label-default">Strict Mode</span> <input id="strictMode" type="checkbox" data-toggle="toggle">
+          </li>
+          <li>
+            <a href="#" id="reset">Reset</a>
+          </li>     
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Menu Button -->
+      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">&#9776;</a>
+      <div id="score-board">
+        <h4><b>Round: </b><span id="timer">0</span></h4>
+      </div>
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            
+            <div class="col-lg-3">
+              <button type="button" id="btn-0" class="my-btn btn-green"></button>
+              <audio id="sound-1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"></audio>    
+            </div><!-- /col -->
+            <div class="col-lg-3">
+              <button type="button" id="btn-1" class="my-btn btn-red"></button>
+              <audio id="sound-2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"></audio>
+            </div><!-- /col -->   
+            <div class="col-lg-3">
+              <button type="button" id="btn-2" class="my-btn btn-blue"></button>
+              <audio id="sound-3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"></audio>
+            </div><!-- /col -->        
+            <div class="col-lg-3">
+              <button type="button" id="btn-3"class="my-btn btn-orange"></button>
+              <audio id="sound-4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"></audio>
+            </div><!-- /col --> 
+          </div><!--/row-->
+        </div><!--/container-->
+      </div><!-- /#page-content-wrapper -->
+    </div><!-- /#wrapper -->    
+  </body>
+</html>
